@@ -1,0 +1,18 @@
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.text-right
+{
+    float: left ;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
