@@ -1,10 +1,6 @@
 
 .footer-foot
 {
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-
     opacity: 0.9;
     filter:alpha(opacity=60);
     box-shadow:0 1px 1px 0 rgba(0,0,0,0.12);

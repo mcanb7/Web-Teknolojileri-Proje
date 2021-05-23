@@ -1,0 +1,61 @@
+body{
+    background: #14233c;
+    background: -webkit-linear-gradient(bottom , #49d6fd, #14233c);
+    background: linear-gradient(bottom , #49d6fd, #14233c); 
+}
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.text-right
+{
+    float: left ;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.navbar-nav .nav-item
+{
+    padding-top: 5px;
+}
+
+.navbar-nav .nav-item p
+{
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+.timeline
+{
+list-style-type: none ;
+position: relative;
+}
+
+
+.timeline li
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: none;
+    color:#fff
+}
+.timeline li h4
+{
+    background-color: #14233c;
+    padding:5px 0 5px 20px;
+    color: #E7CE9C;
+    font-size: 15px;
+}
+

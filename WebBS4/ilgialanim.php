@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="stilEgitim.css">
+    <link rel="stylesheet" href="stilAlan.css"> 
     <link rel="stylesheet" href="stilFooter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/19cdc3d7ad.js" crossorigin="anonymous"></script>
@@ -44,7 +44,7 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link ml-3 text-success fas fa-music" href="ilgialanim.html"> <p> &nbspİlgi Alanım</p></a>
+              <a class="nav-link ml-3 text-success fas fa-dollar-sign" href="ilgialanim.php"> <p> &nbspİlgi Alanım</p></a>
             </li>
 
             <li class="nav-item">
@@ -58,6 +58,45 @@
       </nav>
 </header>
    
+<div class="container kur">
+<?php
+    $JSON = json_decode(file_get_contents('https://api.genelpara.com/embed/doviz.json'), true);
+?>
+<div class="timeline">
+<ul>
+    <li>
+        <h4>USD</h4><br>
+        <p>Alış: <?php echo $JSON['USD']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['USD']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['USD']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>EUR</h4><br>
+        <p>Alış: <?php echo $JSON['EUR']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['EUR']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['EUR']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>GBP</h4><br>
+        <p>Alış: <?php echo $JSON['GBP']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['GBP']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['GBP']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>CHF</h4><br>
+        <p>Alış: <?php echo $JSON['CHF']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['CHF']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['CHF']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>CAD</h4><br>
+        <p>Alış: <?php echo $JSON['CAD']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['CAD']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['CAD']['degisim']; ?></p>
+    </li>
+</ul>
+</div>
+</div>
 
 
 

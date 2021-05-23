@@ -46,7 +46,7 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link ml-3 text-white fas fa-music" href="ilgialanim.html"> <p> &nbspİlgi Alanım</p></a>
+              <a class="nav-link ml-3 text-white fas fa-music" href="ilgialanim.php"> <p> &nbspİlgi Alanım</p></a>
           </li>
 
             <li class="nav-item">
