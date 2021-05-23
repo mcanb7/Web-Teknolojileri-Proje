@@ -1,0 +1,108 @@
+body{
+    background: #14233c;
+    background: -webkit-linear-gradient(bottom , #49d6fd, #14233c);
+    background: linear-gradient(bottom , #49d6fd, #14233c); 
+    font-family: sans-serif;
+}
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.text-right
+{
+    float: left ;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.navbar-nav .nav-item
+{
+    padding-top: 5px;
+}
+
+.navbar-nav .nav-item p
+{
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.box{
+    width: 400px;
+    padding:30px;
+    margin-left: 580px;
+    margin-top: 100px;
+    background: #191919;
+    text-align: center;
+    height: auto;
+}
+
+.box h3{
+    color:white;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.box input[type = "text"] , .box input[type = "password"]{
+    border:0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    margin-top: -17px;
+}
+
+.box input[type = "text"]:focus , .box input[type = "password"]:focus{
+width: 300px;
+border-color: #2ecc71;
+}
+
+.box input[type = "submit"]{
+    border:0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 10px;
+    width: 150px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+
+.box input[type = "submit"]:hover{
+    background: #2ecc71;
+    width: 200px;
+}
+
+.margin-bottom-login
+{
+    text-align: center;
+}
+.margin-bottom-login h5 , .margin-bottom-login h6{
+    color:#E7CE9C;
+}
+
+.margin-bottom-login p :hover {
+    color:#E7CE9C;
+}

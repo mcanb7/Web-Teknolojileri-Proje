@@ -1,3 +1,5 @@
+ <?php include "loginKontrol.php";?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,14 +7,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="stilIndex.css">
+    <link rel="stylesheet" href="stilLogin.css">
     <link rel="stylesheet" href="stilFooter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/19cdc3d7ad.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Ana Sayfa</title>
+    <title>Kullanıcı Girişi</title>
   </head>
 <body>
 <header>
@@ -28,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto ">
             <li class="nav-item">
-                <a class="nav-link text-success mr-3 fas fa-home" href="index.html"><p> &nbspAnasayfa</p></a>
+                <a class="nav-link text-white mr-3 fas fa-home" href="index.html"><p> &nbspAnasayfa</p></a>
             </li>
 
             <li class="nav-item">
@@ -42,6 +44,7 @@
             <li class="nav-item">
                 <a class="nav-link ml-3 text-white fas fa-archway" href="miras.html"> <p> &nbspMirasımız</p></a>
             </li>
+            
             <li class="nav-item">
               <a class="nav-link ml-3 text-white fas fa-music" href="ilgialanim.html"> <p> &nbspİlgi Alanım</p></a>
           </li>
@@ -57,81 +60,23 @@
       </nav>
 </header>
 
-<section id="slider">    
-  <div class="container">   
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/ben.jpg" class="d-block w-100" alt="Mahmut Can">
-    </div>
-    <div class="carousel-item">
-      <img src="images/pompeipolis.jpg" class="d-block w-100" alt="fotoğraf">
-    </div>
-    <div class="carousel-item">
-      <img src="images/basketbol.jpg" class="d-block w-100" alt="Basketbol">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>     
-</section>
-
-
-<div class="container">
-    <div class="row">
-        <div class="row">
-  
-            <div class="col-md-4">
-              <div class="index-box">
-                <i class="fas fa-user"></i><span>Hakkımda</span>
-                <p>Merhabalar;<br>&nbsp&nbspBen Mahmut Can Bayram, 1999 Mersin doğumluyum. Aslen Malatyalıyız.
-                  <br>&emsp;Bilgisayarla erken tanıştığım için bilgisayarda oyun oynamak benim için her zaman büyük bir keyif, bazen de öğrenme ve keşfetme aracı olmuştur. 
-                  <br>&nbsp&nbsp Şu anda Sakarya Üniversitesi Bilgisayar Mühendisliği ve Anadolu Üniversitesi Yönetim Bilişim Sistemleri öğrencisiyim. 
-                  <br>&emsp;Eğitim ve yetkinliklerimi belirttiğim sayfaya gitmek için aşağıdaki butona tıklayabilirsiniz.
-                </p>
-                <a href="egitim.html" class="btn btn-success ml-3">Eğitim bilgilerim için tıklayınız</a>
-              </div>
+<form class="box" action="loginKontrol.php" method="post">
+            <div class="form">
+              <h3>Login</h3>
+            <input class="info" type="text" name="mail" placeholder="E-posta adresinizi giriniz" value="" required><br>
+            <input class="info" type="password" name="pass" placeholder="Parolanızı Giriniz" value="" required><br>
+            <input type="submit" name="gonder" value="Giriş"><br>
             </div>
-            <div class="col-md-4">
-              <div class="index-box">
-                <i class="fas fa-music"></i><span>Hobilerim</span>
-                <p>&nbsp&nbspYeni yerler keşfetmeyi, dizi ve film izlemeyi , fotoğraf çekmeyi, müzik dinlemeyi, çoğu erkek çocuğu gibi çocukluğumda sokaklarda top oynadığım için futbol oynamayı ve hayvanlarla vakit geçirmeyi çok severim.
-                  <br>&emsp;İlgi alanlarımla ilgili internetten bulduğum
-                  ücretsiz bir API servisinden yararlandığım sayfaya tümünü gör diyerek ulaşabilirsiniz.
-                </p>
+        </form>  
 
-                <a href="ilgialanim.html" class="btn btn-success ml-3">Tümünü Gör</a>
-              </div>
-            </div>
- 
-            <div class="col-md-4">
-              <div class="index-box">
-                <i class="fab fa-dribbble"></i><span>Basketbol</span>
-                <p>
-                &emsp;Basketbol çocukluğumdan beri en sevdiğim spor olmuştur.Hem izlemek hem de oynamaktan büyük keyif almışımdır.Lise yıllarımda okullar arası turnuvalarda ve okul takımında oynamıştım.
-                <br>&emsp; Basketbol hakkında daha fazla bilgi edinmek için tümünü gör butonuna tıklayabilirsiniz.
-                </p>
-                <a href="https://tr.wikipedia.org/wiki/Basketbol" class="btn btn-success ml-3">Tümünü Gör</a>
-              </div>
-            </div>
 
-          </div>
-    </div>
-</div>
 
-<footer class="footer-foot">
+
+
+
+
+
+  <footer class="footer-foot">
   <div class="footer-right">
   <a href="https://www.instagram.com/mahmutcanbayrm7/?hl=tr"><i class="fa fa-instagram"></i></a>
   <a href="https://twitter.com/mhmtcnbyrm7"><i class="fa fa-twitter"></i></a>
@@ -153,7 +98,6 @@
   <p>© 2021 Tüm Hakları Saklıdır.<br>Mahmut Can BAYRAM</p>
   </div>
   </footer>
-
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
